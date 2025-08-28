@@ -2,6 +2,10 @@
 
 /** @type {import('prettier').Config & import('prettier-plugin-tailwindcss').PluginOptions} */
 const config = {
+  semi: true,
+  arrowParens: "always",
+  experimentalTernaries: true,
+  experimentalOperatorPosition: "start",
   plugins: ["prettier-plugin-tailwindcss"],
   tailwindStylesheet: "./src/app/globals.css",
 };
